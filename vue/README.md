@@ -6,7 +6,9 @@
 4. 配置vscode支持webpack的alias，参考[配置vscode支持webpack的alias](https://www.jianshu.com/p/552eac30ddbf)
 
 #### vue
-1. 设置全局scss变量 
+1. 不翻墙情况下谷歌浏览器安装vue插件(Vue Devtools)
+   [Chrome 浏览器安装Vue插件方法](https://www.cnblogs.com/wbl001/p/11063613.html) 
+2. 设置全局scss变量 
 有的时候你想要向 webpack 的预处理器 loader 传递选项。你可以使用 vue.config.js 中的 css.loaderOptions 选项。比如你可以这样向所有 Sass/Less 样式传入共享的全局变量：
 ```bash
 // vue.config.js
