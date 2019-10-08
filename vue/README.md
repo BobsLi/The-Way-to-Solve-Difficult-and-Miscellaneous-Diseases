@@ -41,6 +41,8 @@ module.exports = {
   }
 }
 ```
+3. vue组件内过滤器this指向undefined？  
+   vue中的过滤器更偏向于对文本数据的转化，而不能依赖this上下文，如果需要使用到上下文this我们应该使用computed计算属性的或者一个method方法[这里查看 有关 this undefined in filters 的 issue](https://github.com/vuejs/vue/issues/5998)  
 
 #### vue router
 1. 当角色权限改变时，需要删除之前角色的动态添加的路由？  
