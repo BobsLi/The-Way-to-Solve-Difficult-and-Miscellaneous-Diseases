@@ -116,3 +116,11 @@
       return routes
     }
 ```
+
+#### 3. 让div聚焦问题
+必须先通过js设置div可编辑（不能直接在div上加contentEditable属性），然后在设置div聚焦，具体步骤如下
+```
+const divObj = document.getElementById(id);
+divObj.contentEditable = true
+divObj.focus()
+```
