@@ -124,3 +124,4 @@ const divObj = document.getElementById(id);
 divObj.contentEditable = true
 divObj.focus()
 ```
+#### 4. 纯数字不能直接使用toString()方法,浏览器会把.解析为小数点直接报错
