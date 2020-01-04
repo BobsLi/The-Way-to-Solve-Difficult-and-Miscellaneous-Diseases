@@ -19,7 +19,8 @@ module.exports = {
       sass: {
         // @/ 是 src/ 的别名
         // 所以这里假设你有 `src/variables.sass` 这个文件
-        data: `@import "~@/variables.sass"`
+        // 注意：在 sass-loader v7 中，这个选项名是 "data"
+        prependData: `@import "~@/variables.sass"`
       },
       // 默认情况下 `sass` 选项会同时对 `sass` 和 `scss` 语法同时生效
       // 因为 `scss` 语法在内部也是由 sass-loader 处理的
@@ -27,7 +28,7 @@ module.exports = {
       // `scss` 语法会要求语句结尾必须有分号，`sass` 则要求必须没有分号
       // 在这种情况下，我们可以使用 `scss` 选项，对 `scss` 语法进行单独配置
       scss: {
-        data: `@import "~@/variables.scss";`
+        prependData: `@import "~@/variables.scss";`
       },
       // 给 less-loader 传递 Less.js 相关选项
       less:{
@@ -43,6 +44,11 @@ module.exports = {
 ```
 3. vue组件内filters过滤器中this指向undefined？  
    vue中的过滤器更偏向于对文本数据的转化，而不能依赖this上下文，如果需要使用到上下文this我们应该使用computed计算属性的或者一个method方法[这里查看 有关 this undefined in filters 的 issue](https://github.com/vuejs/vue/issues/5998)  
+
+4. vue组件中样式影响子组件里的样式？
+	（1）创建一个没有scoped 的style里面编写子组件的样式；
+	（2） 在有scoped 的style里面 使用 /deep/ 或 ::v-deep 选择器，只适用于sass/less的预编译器
+	
 
 #### vue router
 1. 当角色权限改变时，需要删除之前角色的动态添加的路由？  
