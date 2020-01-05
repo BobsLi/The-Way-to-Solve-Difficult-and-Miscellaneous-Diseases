@@ -1,4 +1,4 @@
-#### (常用的cmd命令)[https://www.cnblogs.com/feer/p/9297867.html]
+#### (常用的快速搜索命令)[https://www.cnblogs.com/feer/p/9297867.html]
 1. eventvwr.msc window事件查看器 包括错误日志等
 2. services.msc window打开服务
 3. mstsc window远程桌面连接命令
