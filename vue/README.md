@@ -48,6 +48,9 @@ module.exports = {
 4. vue组件中样式影响子组件里的样式？
 	（1）创建一个没有scoped 的style里面编写子组件的样式；
 	（2） 在有scoped 的style里面 使用 /deep/ 或 ::v-deep 选择器，只适用于sass/less的预编译器
+5. vue使用SockJS实现webSocket通信 
+	[示例1](https://www.cnblogs.com/luoxuemei/p/10115679.html) 
+	[示例2](https://juejin.im/post/5b7fd02d6fb9a01a196f6276)
 	
 
 #### vue router
