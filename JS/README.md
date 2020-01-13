@@ -124,4 +124,18 @@ const divObj = document.getElementById(id);
 divObj.contentEditable = true
 divObj.focus()
 ```
-#### 4. 纯数字不能直接使用toString()方法,浏览器会把.解析为小数点直接报错
+#### 4. 纯数字不能直接使用toString()方法,浏览器会把.解析为小数点直接报错 
+
+#### 5. 判断对象属性是否存在[https://eslint.bootcss.com/docs/rules/no-prototype-builtins/](https://eslint.bootcss.com/docs/rules/no-prototype-builtins/)
+	```bash
+		eg:
+		const obj = {
+		  one: 1,
+		  two: 2
+		}
+		// false
+		obj.hasOwnProperty('one') // Do not access Object.prototype method 'hasOwnProperty' from target object
+		
+		// true
+		Object.prototype.hasOwnProperty.call(obj, 'one')
+	```
