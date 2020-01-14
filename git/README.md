@@ -1,7 +1,9 @@
 # git
+
 ##### 1. windows下git下载失败或者很慢的解决方法  
    (解决windows下载git失败情况
 )[https://blog.csdn.net/huobaopaopao/article/details/83417199] 
+
 ##### 2. git克隆项目失败 
    + 错误码1045（文件太大） 
      ```
@@ -14,3 +16,5 @@
      #然后把缓存清除
       git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch <file/dir>' HEAD
      ```
+
+##### 3. Git管理代码：标签使用 [https://www.jianshu.com/p/36384e7eccc1](https://www.jianshu.com/p/36384e7eccc1)
