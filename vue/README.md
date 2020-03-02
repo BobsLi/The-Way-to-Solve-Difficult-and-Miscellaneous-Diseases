@@ -51,6 +51,7 @@ module.exports = {
 5. vue使用SockJS实现webSocket通信 
 	[示例1](https://www.cnblogs.com/luoxuemei/p/10115679.html) 
 	[示例2](https://juejin.im/post/5b7fd02d6fb9a01a196f6276)
+6. vue+axios以流的形式下载文件[https://www.jianshu.com/p/bc2551e1ab2a](https://www.jianshu.com/p/bc2551e1ab2a)
 	
 
 #### vue router
