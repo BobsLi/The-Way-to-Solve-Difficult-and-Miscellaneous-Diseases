@@ -52,6 +52,11 @@ module.exports = {
 	[示例1](https://www.cnblogs.com/luoxuemei/p/10115679.html) 
 	[示例2](https://juejin.im/post/5b7fd02d6fb9a01a196f6276)
 6. vue+axios以流的形式下载文件[https://www.jianshu.com/p/bc2551e1ab2a](https://www.jianshu.com/p/bc2551e1ab2a)
+7. vue组件内使用v-charts无法显示标题解决方法[https://www.cnblogs.com/tl542475736/p/9427768.html](https://www.cnblogs.com/tl542475736/p/9427768.html)
+	```bash
+	  import 'echarts/lib/component/title'
+	```
+	
 	
 
 #### vue router
