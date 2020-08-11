@@ -20,3 +20,5 @@
 ##### 3. Git管理代码：标签使用 [https://www.jianshu.com/p/36384e7eccc1](https://www.jianshu.com/p/36384e7eccc1)
 
 ##### 4. Git 配置 Github、Gitlab、Gitee 多平台 SSH-Key [https://www.jianshu.com/p/f039c0e954f5](https://www.jianshu.com/p/f039c0e954f5)  [https://gitee.com/help/articles/4229#article-header0](https://gitee.com/help/articles/4229#article-header0)
+
+##### 5. git本地库同时关联多个远程仓库[https://www.liaoxuefeng.com/wiki/896043488029600/1163625339727712](https://www.liaoxuefeng.com/wiki/896043488029600/1163625339727712)
