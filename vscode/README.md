@@ -6,7 +6,10 @@
 4. 配置vscode支持webpack的alias，参考[配置vscode支持webpack的alias](https://www.jianshu.com/p/552eac30ddbf)
 5. 设置自动整理所有引用import，参考[设置自动整理所有引用import](https://blog.csdn.net/Synup/article/details/97498823?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param)
 6. 查看默认配置： ctrl +shift + p
+7. 解决代码无法折叠问题  Folding Strategy 设置成indentation
+8. [vscode——配置终端集成bash和cmd](https://www.cnblogs.com/wangyang0210/p/11008206.html)
 
 #### 编辑器和vue相关的
 1. vue 在 vscode 中断点调试问题
    [vue 在 vscode 中断点调试问题](https://www.jianshu.com/p/d3329e9cd126) 
+
