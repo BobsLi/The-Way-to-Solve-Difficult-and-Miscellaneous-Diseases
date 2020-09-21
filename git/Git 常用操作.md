@@ -54,6 +54,21 @@ git fetch origin dev
 git rebase origin/dev   #rebase 保持提交记录的整洁
 ```
 
+
+
+### git本地库同时关联多个远程仓库
+
+```shell
+// 设置多个远程仓库
+git remote add github ....... # 添加git地址
+git remote add gitee ....... # 添加gitee地址
+git push github master  # 推送到线上github仓库
+git push gitee master  # 推送到线上gitee仓库
+
+```
+
+
+
 ### 暂存以及复原当前工作环境  [git stash 常用命令](https://www.jianshu.com/p/0cde1c60c101)
 
 ```shell
