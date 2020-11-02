@@ -9,8 +9,10 @@
 	```bash
 	npm root -g
 	```
+	
 3. npm删除项目所有依赖和清缓存
 	清缓存：
+	
 	```bash
 	npm cache verify
 	```
@@ -24,3 +26,15 @@
 	npm uninstall *
 	```
 	
+
+4. 一键更新package.json中所有模块的版本 (一键更新package.json中所有模块的版本)[https://www.jianshu.com/p/ce9a46ae3a03]
+
+   ```
+   // 安装
+   npm install npm-check-updates -g 
+   
+   // 使用
+   npm-check-updates 或者 ncu
+   ```
+
+5. npm 安装chromedriver 报错 (vuejs npm chromedriver 报错)[https://www.cnblogs.com/web-record/p/9450709.html]

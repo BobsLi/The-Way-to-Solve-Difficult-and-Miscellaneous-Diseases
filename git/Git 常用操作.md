@@ -30,6 +30,7 @@ git rm --cached file         #删除仓库中的文件，保留本地的文件 �
 git branch -a #查看已有的本地及远程分支
 git push origin --delete dev  #删除远程分支
 git branch -d dev #删除本地分支
+git remote update origin --prune(-p) #更新远程分支列表
 ```
 
 ### 推送到远程
