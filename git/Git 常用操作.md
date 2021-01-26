@@ -22,11 +22,39 @@ git rm --cached file         #删除仓库中的文件，保留本地的文件 �
 # gitlab 自己创建代码托管（基于linux）
 ```
 
-## 分支操作
 
-### 删除远程分支
+
+### 克隆操作
 
 ```shell
+git clone giturl catalog # 克隆远程git仓库到本地指定目录
+git clone -b SIT-release giturl catalog # 克隆远程git仓库指定分支到本地指定目录
+git push origin dev  推送到线上dev分支
+git pull origin dev  获取线上的dev分支
+
+提交的代码晚于github行的代码，会有错误提示，叫你重新拉取代码
+拉取代码会提示你合并代码
+
+git pull origin dev =  git fetch origin dev  
+                    +  git merge origin/dev
+
+
+git pull 的代码会有分叉（有忘记提交的代码的情况：比如在公司开的代码已经commit 但是忘提交，回家继续开发提交，第二天到都公司pull代码就会出现分叉）
+
+下面的方法不会有分叉
+git fetch origin dev
+git rebase origin/dev   #rebase 保持提交记录的整洁
+```
+
+
+
+## 分支操作
+
+```shell
+git branch (branchname) #创建分支
+git checkout (branchname) #切换分支
+git checkout -b (branchname) #创建新分支并立即切换到该分支
+git branch  #查看本地分支列表
 git branch -a #查看已有的本地及远程分支
 git push origin --delete dev  #删除远程分支
 git branch -d dev #删除本地分支
@@ -83,6 +111,27 @@ git stash clear #删除所有缓存的stash
 git stash show stash@{0} #显示做了哪些改动，默认show第一个存储,如果要显示其他存贮，后面加stash@{$num}，比如第二个 git stash show stash@{1}
 
 ```
+
+
+
+
+
+### 标签管理
+
+```shell
+git tag # 查看标签列表
+新建标签
+git tag <tagname> [commit id] #用于新建一个标签，默认为HEAD，也可以指定一个commit id；
+git tag -a <tagname> -m "标签注释" [commit id] #可以指定标签信息；
+
+git push origin <tagname> #可以推送一个本地标签
+git push origin --tags #可以推送全部未推送过的本地标签
+git tag -d <tagname> #可以删除一个本地标签
+git push origin :refs/tags/<tagname> #可以删除一个远程标签
+
+```
+
+
 
 ### 
 

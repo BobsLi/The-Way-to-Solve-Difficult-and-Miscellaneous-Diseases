@@ -66,8 +66,24 @@ module.exports = {
 #### element ui
 1. el-input如果需要处理键盘操作需要加上.native    
    eg: <el-input v-model="todo" @keyup.enter.native="addTodo"></el-input>  
+   
 2. el-checkbox,如果需要在不同地方用同一个checkbox渲染，那需要绑定同样的key值
+
 3. 表单验证，验证字段值必须大于1的正数(文档上描述有问题[详情](https://github.com/yiminghe/async-validator))
    ```bash
-	{ type: 'number', min: 0, message: '值必须大于1的正数' },
+	{ type: 'number', min: 0, message: '值必须大于1的正数' },、
    ```
+
+4. 表单动态验证实时生效，需要验证的表单字段规则必须设为{}或者[{}],然后根据逻辑动态添加规则
+
+   ```
+   this.$set(this.formRules, 'populationBase', this.setPopulationBaseRules())
+   ```
+
+5. 解决表格固定列错位问题
+
+   ```
+   this.$refs.tableRef.doLayout()
+   ```
+
+   
