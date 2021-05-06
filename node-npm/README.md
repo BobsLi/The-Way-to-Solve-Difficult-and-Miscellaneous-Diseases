@@ -3,7 +3,7 @@
     ```bash
     npm config set registry https://registry.npm.taobao.org npm info underscore
     ```
-   (设置npm的registry)[https://www.cnblogs.com/jianxian/p/12559469.html]
+   (设置npm的registry)[https://www.jianshu.com/p/5eadb94e83dc]
 
 2. 查询npm全局安装包路径
 	```bash
@@ -26,7 +26,6 @@
 	npm uninstall *
 	```
 	
-
 4. 一键更新package.json中所有模块的版本 (一键更新package.json中所有模块的版本)[https://www.jianshu.com/p/ce9a46ae3a03]
 
    ```
@@ -38,3 +37,5 @@
    ```
 
 5. npm 安装chromedriver 报错 (vuejs npm chromedriver 报错)[https://www.cnblogs.com/web-record/p/9450709.html]
+
+6. nvm切换node版本失效，可能是安装nvm之前先安装了node，需要先将node卸载使用nvm安装即可切换
