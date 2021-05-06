@@ -1,10 +1,14 @@
 # node
 1. npm重新指定 registry 来解决 npm 安装速度慢的问题 (设置国内镜像) 
     ```bash
+    #配置npm源
     npm config set registry https://registry.npm.taobao.org npm info underscore
-    ```
-   (设置npm的registry)[https://www.jianshu.com/p/5eadb94e83dc]
 
+    #验证是否配置成功
+    npm config get registry 或 npm info express
+    ```
+    (设置npm的registry)[https://blog.csdn.net/weixin_43833570/article/details/99405469]
+    
 2. 查询npm全局安装包路径
 	```bash
 	npm root -g
