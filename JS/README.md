@@ -89,7 +89,7 @@
           })
         }
 ```
-     
+
    **一维转多维：思路：主要是将一级路由数组通过某一唯一键组成映射关系，然后遍历一级路由，将子路由挂到父路由所对应的映射信息的childer字段上面**
  ```bash
     eg:
@@ -115,7 +115,7 @@
       }
       return routes
     }
-```
+ ```
 
 #### 3. 让div聚焦问题
 必须先通过js设置div可编辑（不能直接在div上加contentEditable属性），然后在设置div聚焦，具体步骤如下
@@ -139,3 +139,14 @@ divObj.focus()
 		// true
 		Object.prototype.hasOwnProperty.call(obj, 'one')
 	```
+
+#### 6.  image访问图片跨域问题[https://juejin.cn/post/6844903795726483463](https://juejin.cn/post/6844903795726483463)
+
+​	1. 同一张图片或者同一个地址，同时被 'img' 所访问，而随后后又会被如 JS 中去访问。而图片存储的地址是跨域的，那么就可能因为缓存问题而导致 JS 中的访问出现跨域问题。
+
+​	2. 解决的办法是让 'img' 标签和 JS 中的访问都走跨域访问的方式，这样既可以解决跨域访问的问题，也可以解决跨域图片在 canvas 中的复用。
+
+```html
+<img src="https://file-test-1259370834.cos.ap-chengdu.myqcloud.com/0000/INSTALL_CHECK_FILE/d6eff438-bb6a-4723-a0fe-743f69595e04.png" crossorigin="anonymous">
+```
+
