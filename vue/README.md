@@ -86,4 +86,5 @@ module.exports = {
    this.$refs.tableRef.doLayout()
    ```
 
-   
+
+6. date-picker,显示类型动态切换（year、monthrange）下拉框位置错位：[解决方法el-date-picker加上key](https://codepen.io/bobsli/pen/XWRvazW)
